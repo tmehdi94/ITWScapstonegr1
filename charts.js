@@ -64,6 +64,23 @@ gapi.analytics.ready(function() {
     }
   });
 
+  var chart4 = new gapi.analytics.googleCharts.DataChart({
+    reportType: 'ga',
+    query: {
+      'dimensions': 'ga:date',
+      'metrics': 'ga:avgSessionDuration',
+      'start-date': '30daysAgo',
+      'end-date': 'yesterday',
+    },
+    chart: {
+      type: 'LINE',
+      container: 'chart4',
+      options: {
+        'title': 'Average Session Duration'
+      }
+    }
+  });
+  
   gapi.analytics.auth.on('success', function(response) {
     viewSelector.execute();
   });
@@ -77,5 +94,6 @@ gapi.analytics.ready(function() {
     chart1.set(newIds).execute();
     chart2.set(newIds).execute();
     chart3.set(newIds).execute();
+	chart4.set(newIds).execute();
   });
 });
