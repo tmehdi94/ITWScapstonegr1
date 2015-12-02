@@ -81,6 +81,23 @@ gapi.analytics.ready(function() {
     }
   });
   
+  var chart5 = new gapi.analytics.googleCharts.DataChart({
+    reportType: 'ga',
+    query: {
+      'metrics': 'ga:30dayUsers',
+	  'dimensions': 'ga:date',
+      'start-date': 'yesterday',
+      'end-date': 'yesterday',
+    },
+    chart: {
+      type: 'TABLE',
+      container: 'chart5',
+      options: {
+        'title': 'Users'
+      }
+    }
+  });
+  
   gapi.analytics.auth.on('success', function(response) {
     viewSelector.execute();
   });
@@ -95,5 +112,6 @@ gapi.analytics.ready(function() {
     chart2.set(newIds).execute();
     chart3.set(newIds).execute();
 	chart4.set(newIds).execute();
+	chart5.set(newIds).execute();
   });
 });
