@@ -1,5 +1,16 @@
-#charts > div{
-	width: 30%;
+.chart {
+	min-width: 30%; 
+	max-width: 30%;
 	display: inline-block;
 	padding: 1em;
+}
+
+.tabletitle {
+	font-family: Arial;
+	font-size: 16px;
+}
+
+table {
+	min-width: 30%;
+	max-width: 30%;
 }

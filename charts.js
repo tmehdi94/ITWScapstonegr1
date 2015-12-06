@@ -210,7 +210,7 @@ gapi.analytics.ready(function() {
     reportType: 'ga',
     query: {
       'metrics': 'ga:avgDomInteractiveTime',
-	  'dimensions': 'ga:dimension4',
+	  'dimensions': 'ga:dimension1',
       'start-date': '30daysAgo',
       'end-date': 'yesterday',
     },

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Embed API Demo</title>
+    <title>Data Communique Embeddable Dashboard</title>
     
     <link rel="stylesheet" type="text/css" href="styles.css">
     
@@ -17,31 +17,67 @@
     <script src="charts.js"></script>
   </head>
   <body>
+  <div id="pagewrap">
     <section id="view-selector"></section>
 	    <section id="auth-button"></section>
     
     <section id="charts">
-      <div id="chart1"></div>
-      <div id="chart2"></div>
-      <div id="chart3"></div>
-	  <div id="chart4"></div>
-	  <div id="chart10"></div>
-	  <div id="chart11"></div>
-	  <div id="chart12"></div>
-	  <div id="chart5"></div>
+	  
+	  <!-- Chart 1: Sessions By Department ID (Pie) -->
+	  <div class="chart" id="chart1"></div>
+	  
+	  <!-- Chart 2: Change Status Events (Line) -->
+	  <div class="chart" id="chart2"></div>
+	  
+	  <!-- Chart 3: PDF Download Events (Line) -->
+	  <div class="chart" id="chart3"></div>
+	  
+	  <!-- Chart 4: Average Session Duration (Line) -->
+	  <div class="chart" id="chart4"></div>
+	  
+	  <!-- Chart 10: Data Uploads (Line) -->
+	  <div class="chart"  id="chart10"></div>
+	  
+	  <!-- Chart 11: Sessions (Line) -->
+	  <div class="chart" id="chart11"></div>
+	  
+	  <!-- Chart 10: Avg Document Interactive Time (Bar) -->
+	  <div class="chart" id="chart12"></div>
+	  
+	  <!-- Chart 5: Users (Table) -->
+	  
+	  <table class="chart">
+	  <tr><td class="tabletitle">User Sessions</span></td></tr>
+	  <tr><td><div id="chart5"></div></td></tr>
+	  </table>
+	  
+	  	  
+	  <!-- Chart 6: Change Status by department ID (Table) -->
+	  <table class="chart">
+	  <tr><td class="tabletitle">Change Status By Department ID</span></td></tr>
+	  <tr><td><div id="chart6"></div></td></tr>
+	  </table>
 	  
 	  
-	  <!-- Change Status by department ID -->
-	  <div id="chart6"></div>
+	  <!-- Chart 7: Logout events (Table) <br/> -->
+	  <table class="chart">
+	  <tr><td class="tabletitle">Logout events</td></tr>
+	  <tr><td><div id="chart7"></div></td></tr>
+	  </table>
 	  
-	  <!-- Logout events<br/> -->
-	  <div id="chart7"></div>
+	  <!-- Chart 9: Logout events (Table) <br/> -->
+	  <table class="chart">
+	  <tr><td class="tabletitle">Logout events</td></tr>
+	  <tr><td><div id="chart9"></div></td></tr>
+	  </table>
 	  
-	  <!-- Logout events<br/> -->
-	  <div id="chart9"></div>
+	  <!-- Chart 8: Login events (Table) <br/> -->
+	  <table class="chart">
+	  <tr><td class="tabletitle">Login events</td></tr>
+	  <tr><td><div id="chart7"></div></td></tr>
+	  </table>
 	  
-	  <!-- Login events<br/> -->
-	  <div id="chart8"></div>
     </section>
+	</div>
   </body>
 </html>
