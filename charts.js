@@ -1,6 +1,8 @@
 gapi.analytics.ready(function() {
 
+  /* ALTER THIS LINE */
   var CLIENT_ID = '688903260894-3bb8vvhfsgkjm9nojqb7olrab4m7kkb0.apps.googleusercontent.com';
+  
 
   gapi.analytics.auth.authorize({
     container: 'auth-button',
